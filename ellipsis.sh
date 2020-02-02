@@ -8,7 +8,9 @@ pkg.pull() {
     echo -e "\e[32mUpdating system...\e[0m"
 
     # Update all installed packages and package repositories
-    sudo apt-get update && sudo apt-get upgrade
+    if utils.cmd_exists apt-get; then
+        sudo apt-get -y update && sudo apt-get -y upgrade
+    fi
 
     echo -e "\e[32mDone system.\e[0m"
 }
