@@ -1,11 +1,7 @@
-# katharinegillis/system
-Just a bunch of dotfiles.
+# System package
 
-## Install
-Clone and symlink or install with [ellipsis][ellipsis]:
+Handles system-related updates and configurations.
 
-```
-$ ellipsis install katharinegillis/system
-```
+## Installation
 
-[ellipsis]: http://ellipsis.sh
+Installs via the [katharinegillis/dot-desktop](https://github.com/katharinegillis/dot-desktop).
