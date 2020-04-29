@@ -2,7 +2,7 @@
 
 pkg.install() {
     # Update the OS packages
-    updateOSPackages
+    bash $PKG_PATH/run.sh
 }
 
 pkg.pull() {
@@ -10,12 +10,5 @@ pkg.pull() {
     git.pull
 
     # Update the OS packages
-    updateOSPackages
-}
-
-updateOSPackages() {
-    # Update all installed packages and package repositories
-    if utils.cmd_exists apt-get; then
-        sudo apt-get -y update && sudo apt-get -y upgrade
-    fi
+    bash $PKG_PATH/run.sh
 }
