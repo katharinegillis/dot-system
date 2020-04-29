@@ -2,7 +2,7 @@
 
 pkg.install() {
     # Update the OS packages
-    bash $PKG_PATH/run.sh
+    bash $PKG_PATH/run.sh "$ELLIPSIS_SRC"
 }
 
 pkg.pull() {
@@ -10,5 +10,5 @@ pkg.pull() {
     git.pull
 
     # Update the OS packages
-    bash $PKG_PATH/run.sh
+    bash $PKG_PATH/run.sh "$ELLIPSIS_SRC"
 }
