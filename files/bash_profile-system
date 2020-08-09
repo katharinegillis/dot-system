@@ -3,3 +3,6 @@
 # Set up Xserver displays
 export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
 export GDK_SCALE=2
+
+# Set up SSH variables
+eval $(ssh-agent)
