@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Set up SSH variables
+eval $(ssh-agent)
