@@ -4,6 +4,9 @@
 sudo apt-get -y update
 sudo apt-get -y upgrade
 
+# Ensure ssh-askpass exists
+sudo apt install ssh-askpass
+
 if [ ! -f "$HOME/.ssh/config" ]; then
     touch "$HOME/.ssh/config"
     chmod 0600 "$HOME/.ssh/config"
